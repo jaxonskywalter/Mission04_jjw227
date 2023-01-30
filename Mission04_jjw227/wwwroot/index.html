@@ -1,0 +1,81 @@
+﻿<!--Author: Jaxon Walter
+    Description: Build an ASP.NET Web App-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jaxon's IS Summary</title>
+
+    <!--makes an icon for the website-->
+    <link rel="icon" type="image/x-icon" href="/img/Death-Star-icon.png">
+
+    <!--links the styling files-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Jaxon</h1>
+
+    <img src="img/IMG_7146.JPG" width="417" height="500" />
+
+    <p>Here is pic of me enjoying 2 of my favorite things: Donuts and Star Wars</p>
+
+    <h2>What do I hope to get out of IS 413?</h2>
+
+    <p>
+        I hope to learn C# well enough to complete
+        basic coding tasks and be able to tell employers I know the language. I would also love to become more comfortable
+        working with github and all of the git commands.
+    </p>
+
+    <h2>The top #3 jobs I am most interested in pursuing when I graduate:</h2>
+
+    <ol>
+        <li>Business Analyst for SouthWest Airlines</li>
+        <li>Software Developer for Lucasfilm</li>
+        <li>Starting my own tech company</li>
+    </ol>
+
+    <h2>Grade Calculator</h2>
+
+    <!--creates a form and keeps track of each input to use in the javascript functions-->
+    <form id="gradeForm">
+        <label for="assignments">Assignments:</label>
+        <input type="number" id="assignments" name="assignments" required>
+        <br><br>
+
+        <label for="groupProject">Group Project:</label>
+        <input type="number" id="groupProject" name="groupProject" required>
+        <br><br>
+
+        <label for="quizzes">Quizzes:</label>
+        <input type="number" id="quizzes" name="quizzes" required>
+        <br><br>
+
+        <label for="midtermExam">Midterm Exam:</label>
+        <input type="number" id="midtermExam" name="midtermExam" required>
+        <br><br>
+
+        <label for="finalExam">Final Exam:</label>
+        <input type="number" id="finalExam" name="finalExam" required>
+        <br><br>
+
+        <label for="intex">INTEX:</label>
+        <input type="number" id="intex" name="intex" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+
+    <!--prints the results of the fucntion-->
+    <p id="letterGrade"></p>
+
+    <!--links in the javascript files-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js./gradeCalculator.js"></script>
+</body>
+</html>

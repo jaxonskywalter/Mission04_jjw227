@@ -1,0 +1,21 @@
+﻿body { 
+    background-color:darkslategrey;
+    color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    color: coral;
+}
+
+h2 {
+    color: coral;
+}
+

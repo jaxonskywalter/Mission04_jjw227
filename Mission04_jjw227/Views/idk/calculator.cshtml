@@ -9,7 +9,7 @@
 <h2>Grade Calculator</h2>
 
 <!--creates a form and keeps track of each input to use in the javascript functions-->
-<form id="gradeForm">
+<form id="gradeForm" method="post">
     <label for="assignments">Assignments:</label>
     <input type="number" id="assignments" name="assignments" asp-for="assignments" >
     <br><br>
@@ -42,10 +42,9 @@
 <br>
 <br>
 
-<p id="letterGrade"></p>
+@*<p id="letterGrade"></p>*@
 
-<script src="lib/jquery/jquery-3.6.3.min.js"></script>
-<script src="js./gradeCalculator.js"></script>
+
 
 
 

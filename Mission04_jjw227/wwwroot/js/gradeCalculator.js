@@ -1,6 +1,5 @@
 ﻿$(document).ready(function () {
     $('#gradeForm').submit(function (event) {
-        event.preventDefault();
 
         //creates variables that are equal to the inputs multiplied by the sylabus weights
         let assignments = $('#assignments').val() * 0.5;
@@ -13,9 +12,8 @@
         //adds of the weights to get a final percentage
         let finalPercentage = assignments + groupProject + quizzes + midtermExam + finalExam + intex;
 
-        //links the results of the functions back to the form to print
-        $('#letterGrade').text('Final Percentage: ' + finalPercentage.toFixed(2) + '%' + ' Letter Grade: ' + getLetterGrade(finalPercentage));
-    });
+        alert('Final Percentage: ' + finalPercentage.toFixed(2) + '%' + '\n' + 'Letter Grade: ' + getLetterGrade(finalPercentage));
+    });    
 
     //calculates the letter grade based off of the final percentage
     function getLetterGrade(percentage) {

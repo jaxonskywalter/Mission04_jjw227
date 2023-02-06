@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model GradeCalculator;
+
+<h2>Grade Calculator</h2>
+
+<!--creates a form and keeps track of each input to use in the javascript functions-->
+<form id="gradeForm">
+    <label for="assignments">Assignments:</label>
+    <input type="number" id="assignments" name="assignments" asp-for="assignments" required>
+    <br><br>
+
+    <label for="groupProject">Group Project:</label>
+    <input type="number" id="groupProject" name="groupProject" asp-for="groupProject" required>
+    <br><br>
+
+    <label for="quizzes">Quizzes:</label>
+    <input type="number" id="quizzes" name="quizzes" asp-for="quizzes" required>
+    <br><br>
+
+    <label for="midtermExam">Midterm Exam:</label>
+    <input type="number" id="midtermExam" name="midtermExam" asp-for="midtermExam" required>
+    <br><br>
+
+    <label for="finalExam">Final Exam:</label>
+    <input type="number" id="finalExam" name="finalExam" asp-for="finalExam" required>
+    <br><br>
+
+    <label for="intex">INTEX:</label>
+    <input type="number" id="intex" name="intex" asp-for="intex" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<br>
+<br>
+
+<p id="letterGrade"></p>
+
+<script src="lib/jquery/jquery-3.6.3.min.js"></script>
+<script src="js./gradeCalculator.js"></script>
+
+
+
+
